@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  db:
+   image: postgres
+   volumes:
+     - ./data/db:/var/lib/postgresql/data
+   restart: always
+   environment:
+     - POSTGRES_DB=crowd_funding
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=postgres
+   container_name: crowd_funding_db
+  web:
+    container_name: crowd_funding
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    env_file:
+      - ./crowdfunding/.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
