@@ -21,11 +21,6 @@ http://crowd-fundingapp.herokuapp.com/
 - [Getting Started](#getting-started)
   - [Setup Your Environment](#setup-your-environment)
   - [Using Docker](#using-docker)
-- [Configurations](#configurations)
-- [Dependencies](#dependencies)
-- [Limitations](#limitations)
-- [Possible Improvements](#possible-improvements)
-- [About Us](#about-us)
   <!-- /TOC -->
 
 ## Features
@@ -61,7 +56,7 @@ Before executing the following commands, please install python 3 as stated in th
 ```bash
 python3 -m pip install --upgrade pip
 
-git clone https://github.com/hossamkhalil01/crowd-funding-django.git
+git clone https://github.com/khaledabotaleb/Crowd-Funding.git
 
 cd crowd-funding-django/ 
 
@@ -78,13 +73,13 @@ pip3 install -r requirements.txt
 python3 manage.py migrate
 ```
 
-5. Run the server
+3. Run the server
 
 ```
 python3 manage.py runserver
 ```
 
-6. Go to the browser and go to the following url: **http://127.0.0.1:8000**
+4. Go to the browser and go to the following url: **http://127.0.0.1:8000**
 
 ##### Note:
 
