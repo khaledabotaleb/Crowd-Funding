@@ -21,6 +21,7 @@ https://crowd-funding-web.herokuapp.com/
 - [Getting Started](#getting-started)
   - [Setup Your Environment](#setup-your-environment)
   - [Using Docker](#using-docker)
+  - [Using Docker](#admin-login)
   <!-- /TOC -->
 
 ## Features
@@ -104,5 +105,24 @@ to build the image and then
 docker-compose run app python3 manage.py migrate
 ```
 
+#### Admin Login
 
+---
+
+to login to the admin account
+go to the link in heroku deployed: https://crowd-funding-web.herokuapp.com/admin/
+and login with email: admin@admin.com
+and passowrd: admin
+
+----
+
+or create your superuser admin with your criedentials
+
+------
+
+#### About Me:
+## name : Khaled Abdelfattah Ali Abotaleb
+## Job Position: Python Developer 
+## Worked On: Holouly Company
+## Student In ITI PythonAmpassaders Program
 
