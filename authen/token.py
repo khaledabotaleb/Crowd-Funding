@@ -26,7 +26,7 @@ class AccountActivationTokenGenerator(PasswordResetTokenGenerator):
             return False
 
         # Check that the timestamp/uid has not been tampered with
-        if not constant_time_compare(self._make_token_with_timestamp(user, ts), token):
+        if not constant_time_compare(self._make_token_with_timestamp(user, ts, settings.SECRET_KEY), token):
             return False
 
         # Check the timestamp is within limit. Timestamps are rounded to

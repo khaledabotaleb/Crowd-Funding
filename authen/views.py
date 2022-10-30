@@ -24,6 +24,7 @@ def register(request):
     if form.is_valid():
         user = form.save()
         UserProfile.objects.create(user_id=user.id, avatar=user.avatar)
+        print(user)
         # send activation mail
         send_activation_email(request, form.cleaned_data.get('email'), user)
 

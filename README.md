@@ -8,7 +8,7 @@ The project is developed using **Python**, **Django** framework and **MySQL** da
 
 ---
 
-http://crowd-fundingapp.herokuapp.com/
+https://crowd-funding-web.herokuapp.com/
 
 
 ## Table of Contents
